@@ -314,13 +314,8 @@ h1 span {
 
 /* HERO IMAGE */
 
-.hero-image {
-    display: flex;
-    justify-content: center;
-}
-
 .image-card {
-    width: min(100%);
+    width: 100%;
     height: 480px;
     border-radius: 35px;
     position: relative;
@@ -343,35 +338,11 @@ h1 span {
 }
 
 
-.image-card::before,
-.image-card::after {
-    content: "";
-
-    position: absolute;
-
-    width: 220px;
-    height: 220px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.06);
-}
-
-.image-card::before {
-    top: -70px;
-    right: -60px;
-}
-
-.image-card::after {
-    bottom: -100px;
-    left: -70px;
-}
-
-
 .img-kopsim {
     width: auto;
     height: 360px;
     border-radius: 10%;
+    object-fit: cover;
     border: 1px solid var(--border);
 }
 
